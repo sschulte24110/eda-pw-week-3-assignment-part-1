@@ -10,6 +10,7 @@ console.log('Animals are: ', animalArray);
 // 1. TODO: Make an array `favoriteFoods` with some favorite foods.
 //    Be sure to console.log your array of foods to the console with
 //    a message, similar to the example above.
+
 let favoriteFoods = ['sushi', 'pizza', 'steak', 'pad thai'];
 console.log('My favorite foods are: ', favoriteFoods);
 
@@ -23,6 +24,7 @@ console.log('Number of animals:', numberOfAnimals);
 // 2. TODO: Create a variable `numberOfFoods` and use the .length property
 //    to assign it the number value of how many items are inside `favoriteFoods`.
 //    Don't forget to console.log `numberOfFoods` to make sure your code worked!
+
 let numberOfFoods = favoriteFoods.length;
 console.log(`I have ${numberOfFoods} favorite foods.`);
 
@@ -30,26 +32,28 @@ console.log(`I have ${numberOfFoods} favorite foods.`);
 console.log('--- 3. Accessing items in an array ---');
 
 // Example: Log the first animal from the array using its array index
-let firstAnimal = animalArray[0];
-console.log('First animal is', firstAnimal);
+console.log('First animal is a', animalArray[0]);
 
 // 3.a. TODO: Create a variable `secondAnimal` and assign it the value
 //      of the second item from the `animalArray`.
 //      Be sure to console.log this new variable to make sure your code
 //      worked as expected.
+
 let secondAnimal = animalArray[1];
-console.log('Second animal is', secondAnimal);
+console.log('Second animal is a', animalArray[1]);
 
 // 3.b. TODO: Create a variable `lastAnimal` and assign it the value of
 //      the "last" item in `animalArray`, using its array index.
 //      You'll need to console.log `animalArray` and `lastAnimal` to make
 //      sure that your code does what you want. (Never trust your code until
 //      you have proof that it works!)
+
 let lastAnimal = animalArray[3];
 console.log('The last animal is a', lastAnimal);
 
 // 3.c. (STRETCH) TODO: Refactor 3.b to use the `animalArray` variable's .length 
 //       property, rather than the exact (hardcoded) index number of the last item.
+
 let lastAnimal2 = animalArray[animalArray.length - 1];
 console.log('The last animal is a', lastAnimal2);
 
@@ -65,6 +69,7 @@ console.log('Added an animal to end,', animalArray);
 //      a dessert that you love.
 //      Similar to above, add the `dessert` to the end of your `favoriteFoods`
 //      array. (How can you be 100% certain this worked? 🤔)
+
 let dessert = 'cheesecake';
 favoriteFoods.push(dessert);
 console.log('Added dessert to end', favoriteFoods);
@@ -77,6 +82,7 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 // 4.b. TODO: Create a variable `entree` and assign it a string value of
 //      an entree that you enjoy.
 //      Add the `entree` to the beginning of your `favoriteFoods` array.
+
 let entree = 'spaghetti';
 favoriteFoods.unshift(entree);
 console.log(`Added an entree to beginning: ${favoriteFoods}`);
@@ -98,7 +104,7 @@ let colors = ['orange', 'yellow', 'green', 'teal'];
 let lastColor = colors.pop();
 console.log('Removed last color:', lastColor);
 console.log('The colors are now:', colors);
-console.log('The length of colors is now', colors.length);
+console.log('The number of colors is now', colors.length);
 
 // Example: Remove the first animal using the Array.shift method.
 removedAnimal = animalArray.shift();
@@ -109,8 +115,8 @@ console.log('The animals are now', animalArray);
 //      inside a new variable called `firstColor`.
 //      To verify that your code worked, console.log `firstColor`!  
 let firstColor = colors.shift();
-console.log(`The first color was ${firstColor} and it has been removed from colors.`);
-console.log(`Colors is now ${colors}.`);
+console.log('The first color was', firstColor); 
+console.log('Colors is now', colors);
 
 
 // STRETCH GOALS:
@@ -144,8 +150,10 @@ console.log('New string of gems with "and" separating:', gemString);
 //       ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 //     Now, console.log the new array.
 
-// Using the spread operator - let colorfulGems = [...gems, ...colors]; -0r- array.concat();
-let colorfulGems = gems.concat(colors);
+// Using the spread operator 
+let colorfulGems = [...gems, ...colors]; 
+// -0r- array.concat();
+// let colorfulGems = gems.concat(colors);
 console.log('Combining arrays gems and colors:', colorfulGems);
 
 
